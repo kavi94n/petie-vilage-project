@@ -1,0 +1,17 @@
+<header>
+    <nav>
+      <div class="logo">petie village</div>
+      <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+      <ul [class.active]="isMenuOpen">
+        <li>
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        </li>
+        <li>
+          <a routerLink="/about" routerLinkActive="active">About</a>
+        </li>
+        <li>
+          <a routerLink="/product" routerLinkActive="active">Product</a>
+        </li>
+      </ul>
+    </nav>
+  </header>

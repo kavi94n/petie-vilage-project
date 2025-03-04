@@ -1,0 +1,50 @@
+<section class="home-container">
+    <div class="presentation-section">
+      <h1 class="title-font">Bienvenue chez "Au petit village"</h1>
+      <p class="text-font">
+        Découvrez nos figurines artisanales inspirées des célèbres héros gaulois Astérix et Obélix.
+        Chaque pièce est unique et fabriquée avec passion dans notre atelier en Bretagne.
+      </p>
+    </div>
+    <div class="controls">
+      <input 
+        type="text" 
+        [(ngModel)]="searchTerm" 
+        placeholder="Rechercher une figurine..."
+        class="search-input text-font"
+      >
+      
+      <select 
+        [(ngModel)]="sortOption" 
+        class="sort-select text-font"
+      >
+        <option value="asc">Prix croissant</option>
+        <option value="desc">Prix décroissant</option>
+      </select>
+    </div>
+    <div *ngIf="products" class="product-grid">
+      <div 
+        *ngFor="let product of products | filterByName:searchTerm | sortByPrice:sortOption" 
+        class="product-card"
+      >
+        <img 
+          [src]="product.image" 
+          [alt]="product.name" 
+          class="product-image"
+        >
+        <div class="product-info">
+          <h3 class="title-font">{{ product.name }}</h3>
+          <p class="price text-font">{{ product.price | currency:'EUR' }}</p>
+          <a 
+            [routerLink]="['/product', product.id]" 
+            class="details-button title-font"
+          >
+            Voir les détails
+          </a>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="(products | filterByName:searchTerm)?.length === 0" class="no-results">
+      <p class="text-font">Aucune figurine ne correspond à votre recherche...</p>
+    </div>
+  </section>

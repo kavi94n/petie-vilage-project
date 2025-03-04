@@ -1,0 +1,42 @@
+/* Exemple de styles de base */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .product-card {
+    border: 1px solid #F9D0A3;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .controls {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+  }
+  
+  .sort-select {
+    padding: 0.5rem;
+  }
+  
+  .details-button {
+    display: inline-block;
+    background-color: #DA001E;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+  }
