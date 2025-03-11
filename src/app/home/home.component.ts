@@ -1,4 +1,4 @@
-// src/app/components/home/home.component.ts
+
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -6,6 +6,7 @@ import { RouterLink } from '@angular/router';
 import { FilterByNamePipe } from '../filter-by-name.pipe';
 import { ProductsService } from '../products.service';
 import { SortByPricePipe } from '../sort-by-price.pipe';
+
 
 
 @Component({

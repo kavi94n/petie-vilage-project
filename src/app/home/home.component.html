@@ -27,11 +27,12 @@
         *ngFor="let product of products | filterByName:searchTerm | sortByPrice:sortOption" 
         class="product-card"
       >
-        <img 
-          [src]="product.image" 
-          [alt]="product.name" 
-          class="product-image"
-        >
+      <img 
+      [src]="product.image" 
+      [alt]="product.name" 
+      class="product-image"
+    >
+    
         <div class="product-info">
           <h3 class="title-font">{{ product.name }}</h3>
           <p class="price text-font">{{ product.price | currency:'EUR' }}</p>
@@ -45,6 +46,6 @@
       </div>
     </div>
     <div *ngIf="(products | filterByName:searchTerm)?.length === 0" class="no-results">
-      <p class="text-font">Aucune figurine ne correspond à votre recherche...</p>
+      <p class="text-font">Aucune figurine ne correspond à votre recherche..</p>
     </div>
   </section>

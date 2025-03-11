@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Astérix",
       "price": 29.99,
-      "image": "assets/images/asterix.jpg",
+      "image": "assets/images/asterix3.jpg",
       "description": "Figurine du célèbre guerrier gaulois"
     },
     {
@@ -17,70 +17,16 @@
       "id": 3,
       "name": "Idéfix",
       "price": 19.99,
-      "image": "assets/images/idefix.jpg",
+      "image": "assets/images/asterix2.png",
       "description": "Figurine du fidèle chien compagnon"
     },
     {
       "id": 4,
       "name": "Panoramix",
       "price": 39.99,
-      "image": "assets/images/panoramix.jpg",
+      "image": "assets/images/images.png",
       "description": "Figurine du druide sage"
-    },
-    {
-        "id": 1,
-        "name": "Astérix",
-        "price": 29.99,
-        "image": "assets/images/asterix.jpg",
-        "description": "Figurine du célèbre guerrier gaulois"
-      },
-      {
-        "id": 2,
-        "name": "Obélix",
-        "price": 34.99,
-        "image": "assets/images/obelix.jpg",
-        "description": "Figurine du livreur de menhirs"
-      },
-      {
-        "id": 3,
-        "name": "Idéfix",
-        "price": 19.99,
-        "image": "assets/images/idefix.jpg",
-        "description": "Figurine du fidèle chien compagnon"
-      },
-      {
-        "id": 4,
-        "name": "Panoramix",
-        "price": 39.99,
-        "image": "assets/images/panoramix.jpg",
-        "description": "Figurine du druide sage"
-      },
-      {
-        "id": 1,
-        "name": "Astérix",
-        "price": 29.99,
-        "image": "assets/images/asterix.jpg",
-        "description": "Figurine du célèbre guerrier gaulois"
-      },
-      {
-        "id": 2,
-        "name": "Obélix",
-        "price": 34.99,
-        "image": "assets/images/obelix.jpg",
-        "description": "Figurine du livreur de menhirs"
-      },
-      {
-        "id": 3,
-        "name": "Idéfix",
-        "price": 19.99,
-        "image": "assets/images/idefix.jpg",
-        "description": "Figurine du fidèle chien compagnon"
-      },
-      {
-        "id": 4,
-        "name": "Panoramix",
-        "price": 39.99,
-        "image": "assets/images/panoramix.jpg",
-        "description": "Figurine du druide sage"
-      }
+    }
+    
+     
   ]
